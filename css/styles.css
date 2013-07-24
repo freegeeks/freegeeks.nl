@@ -14,7 +14,7 @@ _Styles v1.0
   }
 }
 
-@media all and (max-width: 480px) and (max-width: 768px) {
+@media all and (min-width: 480px) and (max-width: 768px) {
   body {
     background: red;
   }
