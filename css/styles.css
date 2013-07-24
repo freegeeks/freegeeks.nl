@@ -8,7 +8,9 @@ _Styles v1.0
                                              
 */
 @import "reset.css";
-@media all and (min-width: 768px), (min-width: 1010px) {
+
+
+@media all and (min-width: 768px), (max-width: 1010px) {
   body {
     background: black;
   }

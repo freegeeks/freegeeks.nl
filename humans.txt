@@ -1,15 +1,26 @@
-# humanstxt.org/
-# The humans responsible & technology colophon
+/* TEAM */
 
-# TEAM
+	Web designer: Renato Cardoso
+	Twitter: @re2005
+	From: Amsterdam, The Netherlands
 
-    <name> -- <role> -- <twitter>
+	Developer: Renan Goncalves
+	Twitter: @renan_saddam
+	From: Amsterdam, The Netherlands
 
-# THANKS
+	Hacker: renasboy
+	Contact: renas [at] gmail.com
+	From: Amsterdam, The Netherlands
 
-    <name>
 
-# TECHNOLOGY COLOPHON
+/* THANKS */
 
-    HTML5, CSS3
-    Normalize.css, jQuery, Modernizr
+	Open Source Communities.
+		
+
+/* SITE */
+
+	Language: English
+	Standards: HTML5, CSS3, JS
+	Language: English
+	Software: GNU/Linux, Bash, Vim, Sublime Text, VIM, Expresso2, Photoshop
