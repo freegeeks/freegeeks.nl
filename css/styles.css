@@ -8,12 +8,26 @@ _Styles v1.0
                                              
 */
 @import "reset.css";
+font-face
+{
+font-family: Bahasa Indonesia;
+src: url('font.ttf')
+}
 
 
 @media all and (min-width: 768px), (max-width: 1010px) {
   body {
-    background: white;
+    background: #202c37;
   }
+  p,h1, h2 {font-family: "Bahasa Indonesia", sans-serif;font-size: 3em;
+  color: #fff;font-weight: normal;
+  }
+  
+  header h1 {
+  	background: url('../img/freegeeks-logo.png') no-repeat left top;width: 240px;padding: 100px 0 0 0;text-align: center;
+  }
+  
+  
 }
 
 @media all and (min-width: 480px) and (max-width: 768px) {
