@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -16,19 +13,17 @@
         <link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
         <meta name="viewport" content="width=320; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
         
-		<script src="js/modernizr-2.6.2.min.js"></script>
-    </head>
-    <body ontouchstart="">
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <!--[if lt IE 9]>
+        <meta http-equiv="refresh" content="0; url=browser.html">
         <![endif]-->
+    </head>
 
-<header>
+	<body ontouchstart="">
+	<header>
     <hgroup>
         <h1>FREEGEEKS</h1>
         <h2>we can help your startup to come true</h2>
     </hgroup>
-</header>
 
 <section id="objects">
 
@@ -86,7 +81,7 @@
 <section id="terms">
 
     <article>
-        <h1>Terms Conditions & Privacy</h1>
+        <h1>Terms Conditions &amp; Privacy</h1>
         <p>We as professionals guarantee confidentiality and intellectual property of all ideas received or executed. We also ensure responsibility and reliability during development process even being free. This is no different from what we do with other projects as well as with our employers.</p>
         <p>The only reward we request is a visible back link to www.freegeeks.nl in the final product so we can reach new ideas.</p>
         <ul>
@@ -111,19 +106,23 @@
     <fieldset>
 
         <div>
-            <label>Objective</label> <textarea></textarea>
+            <label>Objective</label> <textarea required></textarea>
         </div>
 
         <div>
-            <label>Company Description</label> <textarea></textarea>
+            <label>Company Description</label> <textarea required></textarea>
         </div>
 
         <div>
-            <label>Requirements</label> <textarea></textarea>
+            <label>Requirements</label> <textarea required></textarea>
         </div>
 
         <div>
-            <label>Contacts</label> <textarea></textarea>
+            <label>Contacts</label> <textarea required></textarea>
+        </div>
+
+        <div>
+            <button>Contact</button>
         </div>
 
     </fieldset>
