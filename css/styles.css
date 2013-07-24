@@ -15,29 +15,28 @@ src: url('font.ttf')
 }
 
 
-@media all and (min-width: 768px), (max-width: 1010px) {
-  body {
-    background: #202c37;
-  }
-  p,h1, h2 {font-family: "Bahasa Indonesia", sans-serif;font-size: 3em;
-  color: #fff;font-weight: normal;
-  }
-  
-  header h1 {
-  	background: url('../img/freegeeks-logo.png') no-repeat left top;width: 240px;padding: 100px 0 0 0;text-align: center;
-  }
-  
-  
+
+html {background: #202c37;}
+body {width: 900px;margin: auto;text-align: center;padding: 0 40px;background: #202d37;}
+p,h1, h2 {font-family: "Bahasa Indonesia", sans-serif;color: #fff;font-weight: normal;}
+
+header h1 {background: url('../img/freegeeks-logo.png') no-repeat left top;width: 240px;padding: 100px 0 0 0;text-align: center;margin: 40px auto;font-size: 3em;text-shadow: 0px 4px 2px #000;}
+header h2 {font-size: 3em;width:25%;margin: auto;}
+section {margin-top: 200px;}
+
+
+section:nth-child(2){
+	border: 2px #ccc solid;
 }
 
+/* Media queries */
+
+@media all and (min-width: 768px) and (max-width: 1010px) {
+	body {background: red;width: 90%;}
+}
 @media all and (min-width: 480px) and (max-width: 768px) {
-  body {
-    background: red;
-  }
+	body {background: green;width: 90%;padding: 0 5%;}
 }
-
 @media all and (min-width: 1px) and (max-width: 480px) {
-  body {
-    background: blue;
-  }
+  body {background: blue;width: 90%;padding: 0 5%;}
 }
