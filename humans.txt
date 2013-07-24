@@ -8,19 +8,18 @@
 	Twitter: @renan_saddam
 	From: Amsterdam, The Netherlands
 
-	Hacker: renasboy
-	Contact: renas [at] gmail.com
+	Hacker: Renato Cavallari (aka renasboy)
+	Contact: renasboy [at] gmail [dot] com
 	From: Amsterdam, The Netherlands
-
 
 /* THANKS */
 
-	Open Source Communities.
+    Free Software Foundation
+	Open Source Community
 		
-
 /* SITE */
 
 	Language: English
 	Standards: HTML5, CSS3, JS
 	Language: English
-	Software: GNU/Linux, Bash, Vim, Sublime Text, VIM, Expresso2, Photoshop
+	Software: GNU/Linux, Bash, vim, Sublime Text, Expresso2, Photoshop
