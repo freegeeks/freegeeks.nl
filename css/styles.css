@@ -34,11 +34,6 @@ section {
     overflow: hidden;
 }
 
-article h1, legend {
-    padding: 0 0 20px 0;
-    border-bottom: 2px #ccc solid;
-    width: 100%;
-}
 
 
 /* HEADER */
