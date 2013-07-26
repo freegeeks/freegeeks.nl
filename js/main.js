@@ -1,3 +1,7 @@
+$(function() {
+    $(window).scrollTop(1);
+});
+
 var fixed = false;
 $(document).scroll(function() {
     // TODO 90 has to be calculated per screensize
