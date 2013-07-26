@@ -41,7 +41,6 @@ article h1, legend {
 }
 
 /* HEADER */
-header {
     text-align: center;
     top: 0;
     left: 0;
@@ -51,7 +50,7 @@ header {
     overflow: hidden;
 }
 
-header h1 {
+body > header h1 {
     background: url('../img/freegeeks-logo.png') no-repeat left top;
     width: 240px;
     padding: 120px 0 0 0;
@@ -60,12 +59,12 @@ header h1 {
     top: 0;
 }
 
-header h2 {
+body > header h2 {
     font-size: 6rem;
     margin: auto;
 }
 
-header:after {
+body > header:after {
     position: absolute;
 	content: "";
 	width: 0;
@@ -108,6 +107,45 @@ section article h1{
 .collapsed:after, .collapsed h2 {
     display: none;
 }
+
+
+/* */
+
+
+#team articles h1:before {
+	content: "";
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+	background: #fff;
+	display: block;
+	position: absolute;
+}
+
+#rlc h1:before {
+		background: url('http://fuga.me/wp-content/uploads/2011/10/renato.jpg') no-repeat;
+}
+#rgc h1:before {
+		background: url('http://fuga.me/wp-content/uploads/2011/10/renato.jpg') no-repeat;
+	
+}
+#rpc h1:before {
+		background: url('http://fuga.me/wp-content/uploads/2011/10/renato.jpg') no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* MEDIA QUERIES */
 
