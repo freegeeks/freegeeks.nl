@@ -1,12 +1,3 @@
-// remap jQuery to $
-(function($){})(window.jQuery);
-
-
-	$(document).ready(function (){
-
-
-});
-
 var fixed = false;
 $(document).scroll(function() {
     // TODO 90 has to be calculated per screensize
@@ -14,8 +5,9 @@ $(document).scroll(function() {
         if( !fixed ) {
             fixed = true;
 			
-            $('header').addClass("collapsed");
-						        
+            $('header')
+                .addClass("collapsed")
+                .addClass("fade");
 		}                                          
     } else {
         if( fixed ) {
