@@ -40,7 +40,9 @@ article h1, legend {
     width: 100%;
 }
 
+
 /* HEADER */
+body > header {
     text-align: center;
     top: 0;
     left: 0;
@@ -110,23 +112,27 @@ section article h1{
 
 
 /* */
+/* header */
 
-
-#team articles h1:before {
+/* tem */
+#team article h1:before {
 	content: "";
 	width: 100px;
 	height: 100px;
 	border-radius: 100px;
-	background: #fff;
 	display: block;
 	position: absolute;
+	background-size: 100% 100%;
+}
+#team article h1 {
+	position: relative;
 }
 
 #rlc h1:before {
-		background: url('http://fuga.me/wp-content/uploads/2011/10/renato.jpg') no-repeat;
+		background: url('http://www.welke.nl/beeld/member/fit-100xauto-wit/none.jpg') no-repeat;
 }
 #rgc h1:before {
-		background: url('http://fuga.me/wp-content/uploads/2011/10/renato.jpg') no-repeat;
+		background: url('http://www.welke.nl/beeld/member/fit-100xauto-wit/none.jpg') no-repeat;
 	
 }
 #rpc h1:before {
@@ -145,43 +151,3 @@ section article h1{
 
 
 
-
-
-/* MEDIA QUERIES */
-
-@media all and (min-width: 768px) and (max-width: 1010px) {
-	body {
-        width: 90%;
-        padding: 0 5%;
-    }
-
-	header h2 {
-        font-size: 2rem;
-        width: 25%;
-        margin: auto;
-    }
-	
-}
-@media all and (min-width: 480px) and (max-width: 768px) {
-	body {
-        width: 90%;
-        padding: 0 5%;
-    }
-
-	header h2 {
-        font-size: 3rem;
-        width: 75%;
-        margin: auto;
-    }
-}
-@media all and (min-width: 1px) and (max-width: 480px) {
-	body {
-        width: 90%;
-        padding: 0 5%;
-    }
-
-	header h2 {
-        font-size: 3rem;
-        margin: auto;
-    }
-}
