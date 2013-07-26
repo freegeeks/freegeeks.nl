@@ -30,6 +30,8 @@ p, h1, h2, li, legend, label {
 section {
     margin-top: 300px;
     float: left;
+    display: block;
+    overflow: hidden;
 }
 
 article h1, legend {
@@ -45,6 +47,8 @@ header {
     left: 0;
     right: 0;
     width: 100%
+    display: block;
+    overflow: hidden;
 }
 
 header h1 {
