@@ -21,9 +21,8 @@ html {
 }
 
 body {
-    width: 90%;
+    width: 100%;
     margin: auto;
-    padding: 0 40px;
 }
 
 p, h1, h2, li, legend, label {
@@ -63,7 +62,7 @@ body > header h1 {
 }
 
 body > header h2 {
-    font-size: 6rem;
+    font-size: 3em;
     margin: auto;
 }
 
