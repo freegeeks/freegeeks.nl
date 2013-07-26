@@ -8,16 +8,17 @@ _Styles v1.0
 */
 
 @import "reset.css";
-
+/* base */
 html {
     font-size: 100%;
-    background-color:#34495E;
-    background-image: linear-gradient(black 2px, transparent 2px),
-    linear-gradient(90deg, black 2px, transparent 2px),
-    linear-gradient(rgba(0,0,0,.3) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0,0,0,.3) 1px, transparent 1px);
-    background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px;
-    background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px
+    background-color:#212c38;
+background:
+radial-gradient(black 15%, transparent 16%) 0 0,
+radial-gradient(black 15%, transparent 16%) 8px 8px,
+radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+background-color:#1d2933;
+background-size:16px 16px;
 }
 
 body {
@@ -26,10 +27,25 @@ body {
 }
 
 p, h1, h2, li, legend, label {
-    font-family: "Dosis", helvetica, sans-serif;
+    font-family: "Roboto Slab", helvetica, sans-serif;
     color: #fff;
     font-weight: normal;
-    font-size: 2rem;
+    font-size: 1.2em;
+}
+p{
+	line-height: 1.5em;
+}
+ul {
+	margin: 10px 0;
+	font-size: .7em;
+}
+ul li {
+	margin: 14px 0;
+	list-style: none;
+}
+ul li:before {
+	content:  "\2713 ";
+	margin-right: 10px;
 }
 
 section {
@@ -38,10 +54,15 @@ section {
     display: block;
     overflow: hidden;
 }
+section article h1{
+    font-size: 2em;
+    text-align: center;
+    margin: 20px 0;
+}
+/* base */
 
 
-
-/* HEADER */
+/* header */
 body > header {
     text-align: center;
     top: 0;
@@ -55,15 +76,17 @@ body > header {
 body > header h1 {
     background: url('../img/freegeeks-logo.png') no-repeat left top;
     width: 240px;
-    padding: 120px 0 0 0;
+    padding: 100px 0 30px 0;
     margin: 30px auto;
-    font-size: 2rem;
+    font-size: 1.5em;
     top: 0;
+    letter-spacing: 2px;
 }
 
 body > header h2 {
-    font-size: 3em;
-    margin: auto;
+    font-size: 2em;
+    padding: 0 5%;
+    line-height: 1.4em;
 }
 
 body > header:after {
@@ -77,48 +100,17 @@ body > header:after {
     margin-left: -30px;
     margin-top: 40px;
 }
-
-section article h1{
-    font-size: 3.5rem;
-    text-align: center;
-    margin: 20px 0;
-}
-
-.collapsed {
-    text-decoration: none;
-    transition: 0.4s;
-    opacity: 0.85;
-	position: fixed;
-	left: 0;
-	right: 0;
-	height: 0;
-	background: #2C3E50;
-	width: 100%;
-	height: 70px;
-}
-
-.collapsed h1 {
-    transition: 0.4s;
-    width: 110px;
-    background-size: 100%;
-    padding-top: 45px;
-    font-size: .8rem;
-    margin: 4px auto;
-}
-
-.collapsed:after, .collapsed h2 {
-    display: none;
-}
-
-
 /* header */
+
+
+
 
 /* tem */
 #team article h1:before {
 	content: "";
-	width: 100px;
-	height: 100px;
-	border-radius: 100px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
 	display: block;
 	position: absolute;
 	background-size: 100% 100%;
@@ -141,9 +133,15 @@ section article h1{
 
 
 
-
-
-
+#progress {
+    background: none repeat scroll 0 0 #444444;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    z-index: -1;
+    position: fixed;
+    opacity: .5;
+}
 
 
 
