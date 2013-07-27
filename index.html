@@ -83,46 +83,40 @@
         <h1>Terms Conditions &amp; Privacy</h1>
         <p>We as professionals guarantee confidentiality and intellectual property of all ideas received or executed. We also ensure responsibility and reliability during development process even being free. This is no different from what we do with other projects as well as with our employers.</p>
         <p>The only reward we request is a visible back link to www.freegeeks.nl in the final product so we can reach new ideas.</p>
-        <ul>
-            <li>Professional responsive web design mobile first</li>
-            <li>Web and mobile apps in HTML5</li>
-            <li>Web services with JSON</li>
-            <li>Server and client side</li>
-            <li>Games</li>
-            <li>Mashups</li>
-            <li>Open Source</li>
-            <li>Max duration</li>
-        </ul>
     </article>
 </section>
 
-<section id="contact" data-start="opacity: 0;" data-350-top="opacity: 0;" data-0-bottom="opacity: 1;">
-    <h1>Waiting list</h1>
+<section id="participate" data-start="opacity: 0;" data-350-top="opacity: 0;" data-0-bottom="opacity: 1;">
+    <header>
+        <h1>Participate</h1>
+        <p>Would you like to participate? Enter your project details so we can analyze it and we will announce the choosen project shortly.</p>
+    </header>
+
     <form>
         <fieldset>
             <legend>Request</legend>
             <div>
-                <label>Objective</label>
-                <textarea required></textarea>
+                <label for="objective">Project objective</label>
+                <textarea id="objective" name="objective" placeholder="Your project's objective." required></textarea>
             </div>
 
             <div>
-                <label>Company Description</label>
-                <textarea required></textarea>
+                <label for="description">Startup description</label>
+                <textarea id="description" name="description" placeholder="Your startup's description." required></textarea>
             </div>
 
             <div>
-                <label>Requirements</label>
-                <textarea required></textarea>
+                <label for="requirements">Project requirements</label>
+                <textarea id="requirements" name="requirements" placeholder="Your project's requirements." required></textarea>
             </div>
 
             <div>
-                <label>Contacts</label>
-                <textarea required></textarea>
+                <label for="contact">Your contact</label>
+                <textarea id="contact" name="contact" placeholder="Your contact." required></textarea>
             </div>
 
             <div>
-                <button>Contact</button>
+                <button>done</button>
             </div>
         </fieldset>
     </form>
