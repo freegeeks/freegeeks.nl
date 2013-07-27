@@ -8,29 +8,40 @@ _Styles v1.0
 */
 
 @import "reset.css";
-/* base */
+
+/* BASE */
+
 html {
     font-size: 100%;
-    background-color:#212c38;
+    background-color: #2C3E50;
 }
 
 body {
-    width: 100%;
     margin: auto;
+    padding: 10px;
 }
 
 p, h1, h2, li, legend, label {
     font-family: "Roboto Slab", helvetica, sans-serif;
-    color: #fff;
+    color: #ECF0F1;
     font-weight: normal;
-    font-size: 1.2em;
+    font-size: 1rem;
 }
-p{
-	line-height: 1.5em;
+h1 {
+    letter-spacing: 2px;
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.5rem;
+    line-height: 3rem;
+}
+p {
+	line-height: 1.5rem;
+    font-size: 1.2rem;
 }
 ul {
 	margin: 10px 0;
-	font-size: .7em;
+	font-size: .7rem;
 }
 ul li {
 	margin: 14px 0;
@@ -42,63 +53,51 @@ ul li:before {
 }
 
 section {
-    margin-top: 300px;
-    float: left;
-    display: block;
     overflow: hidden;
+    margin-top: 50px;
+    display: block;
 }
-section article h1{
-    font-size: 2em;
+
+section article h1 {
     text-align: center;
     margin: 20px 0;
 }
-/* base */
 
+/* HEADER */
 
-/* header */
 body > header {
     text-align: center;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%
     display: block;
-    overflow: hidden;
+    position: relative;
 }
 
 body > header h1 {
-    background: url('../img/freegeeks-logo.png') no-repeat left top;
-    width: 240px;
-    padding: 100px 0 30px 0;
-    margin: 30px auto;
-    font-size: 1.5em;
-    top: 0;
-    letter-spacing: 2px;
+    background: url('../img/freegeeks-logo.png') no-repeat top center;
+    padding-top: 100px;
+    margin-bottom: 50px;
 }
 
 body > header h2 {
-    font-size: 2em;
-    padding: 0 5%;
-    line-height: 1.4em;
+    padding-bottom: 30px;
 }
 
 body > header:after {
     position: absolute;
 	content: "";
 	width: 0;
-    border-width: 50px 30px 30px 30px;
+    border-width: 15px 10px 10px 10px;
     border-style: solid;
-    border-color: #fff transparent transparent transparent;
+    border-color: #BDC3C7 transparent transparent transparent;
 	left: 50%;
-    margin-left: -30px;
-    margin-top: 40px;
+    bottom: -10px;
+    margin-left: -10px;
 }
-/* header */
 
+/* TEAM */
+#team header h1 {
+    text-align: center
+}
 
-
-
-/* tem */
 #team article h1:before {
 	content: "";
 	width: 50px;
@@ -107,37 +106,44 @@ body > header:after {
 	display: block;
 	position: absolute;
 	background-size: 100% 100%;
+    left: 0;
+    top: -5px;
 }
+
 #team article h1 {
+    text-align: left;
+    padding-left: 70px;
 	position: relative;
 }
 
 #rlc h1:before {
 		background: url('http://www.welke.nl/beeld/member/fit-100xauto-wit/none.jpg') no-repeat;
 }
+
 #rgc h1:before {
 		background: url('http://www.welke.nl/beeld/member/fit-100xauto-wit/none.jpg') no-repeat;
-	
 }
+
 #rpc h1:before {
-		background: url('http://fuga.me/wp-content/uploads/2011/10/renato.jpg') no-repeat;
+		background: url('../img/renasboy.png') no-repeat;
 }
 
 
+/* M E D I A   Q U E R I E S */
 
-
-#progress {
-    background: none repeat scroll 0 0 #444444;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    z-index: -1;
-    position: fixed;
-    opacity: .5;
+/* WIDTH = body.width - body.padding (20px) */
+@media only screen and (min-width: 320px) {
+    body {
+        width: 300px;
+    }
 }
-
-
-
-
-
-
+@media only screen and (min-width: 640px) {
+    body {
+        width: 620px;
+    }
+}
+@media only screen and (min-width: 960px) {
+    body {
+        width: 940px;
+    }
+}
