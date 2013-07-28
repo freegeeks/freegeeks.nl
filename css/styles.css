@@ -70,12 +70,42 @@ body > header {
     text-align: center;
     display: block;
     position: relative;
+    animation-duration: 3s;
+    animation-name: animheader;
+}
+
+@keyframes animheader {
+  0% {
+      top: -1000px;
+  }
+
+  100% {
+      top: 0px;
+  }
 }
 
 body > header h1 {
     background: url('../img/freegeeks-logo.svg') no-repeat top center;
     padding-top: 100px;
     padding-bottom: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    animation-duration: 4s;
+    animation-name: animh;
+}
+
+@keyframes animh {
+  0% {
+      top: -200px;
+  }
+
+  90% {
+      top: -200px;
+  }
+
+  100% {
+      top: 0px;
+  }
 }
 
 body > header h2 {
@@ -211,20 +241,4 @@ button:active{
     #team article:first-child{
     	margin-left: 0;
     }
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2),
-
-only screen and (min--moz-device-pixel-ratio: 2),
-
-only screen and (-o-min-device-pixel-ratio: 2/1),
-
-only screen and (min-device-pixel-ratio: 2) {
-
-#myelement{
-
-background:url(myicon@2x.png) no-repeat;
-
-}
-
 }
