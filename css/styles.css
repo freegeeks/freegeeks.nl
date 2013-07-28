@@ -110,6 +110,7 @@ body > header:after {
     background-size: 100% 100%;
     left: 0;
     top: -5px;
+    float: left;
 }
 
 #team article h1 {
