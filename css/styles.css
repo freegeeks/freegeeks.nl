@@ -72,6 +72,8 @@ body > header {
     position: relative;
     animation-duration: 2s;
     animation-name: anim-header;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-name: anim-header;
 }
 body > header h1 {
     background: url('../img/freegeeks-logo.svg') no-repeat top center;
@@ -81,10 +83,11 @@ body > header h1 {
     position: relative;
     animation-duration: 2s;
     animation-name: anim-logo;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-name: anim-logo;
     width: 135px;
     font-size: 1.4rem;
 }
-
 
 @keyframes anim-logo {
   0% {
@@ -112,8 +115,31 @@ body > header h1 {
   }
 }
 
+@-webkit-keyframes anim-logo {
+  0% {
+      top: -200px;
+  }
 
+ 60% {
+      top: -180px;
+      opacity: 0;
+  }
 
+  100% {
+      top: 0px;
+      opacity: 1;
+  }
+}
+
+@-webkit-keyframes anim-header {
+  0% {
+      top: -500px;
+  }
+
+  100% {
+      top: 0px;
+  }
+}
 
 body > header h2 {
     padding-bottom: 30px;
