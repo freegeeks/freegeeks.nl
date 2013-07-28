@@ -91,7 +91,7 @@ body > header h1 {
       top: -200px;
   }
 
- 30% {
+ 60% {
       top: -180px;
       opacity: 0;
   }
@@ -101,6 +101,7 @@ body > header h1 {
       opacity: 1;
   }
 }
+
 @keyframes anim-header {
   0% {
       top: -500px;
