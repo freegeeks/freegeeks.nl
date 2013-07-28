@@ -1,11 +1,11 @@
-/*
- ___  __   ___  ___  __   ___  ___       __
-|__  |__) |__  |__  / _` |__  |__  |__/ /__`
-|    |  \ |___ |___ \__> |___ |___ |  \ .__/
-
-_2013
-_Styles v1.0
-*/
+ /*
+ - ___  __   ___  ___  __   ___  ___       __
+ -|__  |__) |__  |__  / _` |__  |__  |__/ /__`
+ -|    |  \ |___ |___ \__> |___ |___ |  \ .__/
+ -
+ -_2013
+ -_Styles v1.0
+ -*/
 
 @import "reset.css";
 
@@ -35,7 +35,7 @@ h1 {
 
 h2 {
     font-size: 1.5rem;
-    line-height: 3rem;
+    line-height: 2rem;
 }
 
 p {
@@ -55,7 +55,7 @@ li {
 
 section {
     overflow: hidden;
-    margin-top: 50px;
+    margin-top: 140px;
     display: block;
 }
 
@@ -70,75 +70,23 @@ body > header {
     text-align: center;
     display: block;
     position: relative;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-name: anim-header;
-    -webkit-animation-duration: 2s;
+    -webkit-animation-duration: .8s;
     -webkit-animation-name: anim-header;
 }
 body > header h1 {
     background: url('../img/freegeeks-logo.svg') no-repeat top center;
     background-size: 100%;
-    padding: 130px 0 20px 0;
-    margin: 20px auto 0 auto;
+    padding: 130px 0 30px 0;
+    margin: 10px auto 0 auto;
     position: relative;
     animation-duration: 2s;
     animation-name: anim-logo;
-    -webkit-animation-duration: 2s;
+    -webkit-animation-duration: .8s;
     -webkit-animation-name: anim-logo;
     width: 135px;
     font-size: 1.4rem;
-}
-
-@keyframes anim-logo {
-  0% {
-      top: -200px;
-  }
-
- 60% {
-      top: -180px;
-      opacity: 0;
-  }
-
-  100% {
-      top: 0px;
-      opacity: 1;
-  }
-}
-
-@keyframes anim-header {
-  0% {
-      top: -500px;
-  }
-
-  100% {
-      top: 0px;
-  }
-}
-
-@-webkit-keyframes anim-logo {
-  0% {
-      top: -200px;
-  }
-
- 60% {
-      top: -180px;
-      opacity: 0;
-  }
-
-  100% {
-      top: 0px;
-      opacity: 1;
-  }
-}
-
-@-webkit-keyframes anim-header {
-  0% {
-      top: -500px;
-  }
-
-  100% {
-      top: 0px;
-  }
 }
 
 body > header h2 {
@@ -152,8 +100,8 @@ body > header:after {
     width: 20px;
     height: 40px;
     left: 50%;
-    bottom: -30px;
-    margin-left: 7px;
+    bottom: -60px;
+    margin-left: 0;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
 }
@@ -165,16 +113,16 @@ body > header:before {
     width: 20px;
     height: 40px;
     left: 50%;
-    bottom: -30px;
-    margin-left: -7px;
+    bottom: -60px;
+    margin-left: -15px;
     transform: rotate(315deg);
     -webkit-transform: rotate(315deg);
 }
 
 /* TEAM */
-#team header h1 {
+#team h1 {
     text-align: center;
-    margin: 20px 0;
+    margin: 0 !important;
 }
 
 #team article h1:before {
@@ -188,12 +136,20 @@ body > header:before {
     left: 0;
     top: 0;
     float: left;
+    border: 2px #fff solid;
+    box-shadow: inset 0px 1px 4px #000;
 }
 
 #team article h1, #team article p {
     text-align: left;
     padding-left: 70px;
     position: relative;
+}
+#team article h2 {
+	font-size: .7rem;
+	padding-left: 70px;
+	position: relative;
+	font-style: italic;
 }
 #team article p {
 	font-size: 1rem;
@@ -285,4 +241,61 @@ button:active{
     #team article:first-child{
     	margin-left: 0;
     }
+}
+
+
+
+
+
+/* keyframes */
+@keyframes anim-logo {
+  0% {
+      top: -200px;
+  }
+
+ 60% {
+      top: -180px;
+      opacity: 0;
+  }
+
+  100% {
+      top: 0px;
+      opacity: 1;
+  }
+}
+
+@keyframes anim-header {
+  0% {
+      top: -500px;
+  }
+
+  100% {
+      top: 0px;
+  }
+}
+
+@-webkit-keyframes anim-logo {
+  0% {
+      top: -200px;
+  }
+
+ 60% {
+      top: -180px;
+      opacity: 0;
+  }
+
+  100% {
+      top: 0px;
+      opacity: 1;
+  }
+}
+
+@-webkit-keyframes anim-header {
+  0% {
+      top: -500px;
+  }
+
+  100% {
+      top: 0px;
+  }
 }
