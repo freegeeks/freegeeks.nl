@@ -167,4 +167,12 @@ body > header:after {
     body {
         width: 940px;
     }
+    #team article{
+    	width: 290px;
+    	float: left;
+    	margin:0  5px;
+    }
+    #team article:first-child{
+    	margin-left: 0;
+    }
 }
