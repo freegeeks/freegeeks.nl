@@ -70,12 +70,41 @@ body > header {
     text-align: center;
     display: block;
     position: relative;
+    animation-duration: 3s;
+    animation-name: animheader;
+}
+
+@keyframes animheader {
+  0% {
+      top: -1000px;
+  }
+
+  100% {
+      top: 0px;
+  }
 }
 
 body > header h1 {
     background: url('../img/freegeeks-logo.png') no-repeat top center;
     padding-top: 100px;
     margin-bottom: 50px;
+    position: relative;
+    animation-duration: 4s;
+    animation-name: animh;
+}
+
+@keyframes animh {
+  0% {
+      top: -200px;
+  }
+
+  90% {
+      top: -200px;
+  }
+
+  100% {
+      top: 0px;
+  }
 }
 
 body > header h2 {
