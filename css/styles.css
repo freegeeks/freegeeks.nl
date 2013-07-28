@@ -148,7 +148,7 @@ body > header h2 {
 body > header:after {
     position: absolute;
     content: "";
-    background: #FFF;
+    background: #ECF0F1;
     width: 20px;
     height: 40px;
     left: 50%;
@@ -161,7 +161,7 @@ body > header:after {
 body > header:before {
     position: absolute;
     content: "";
-    background: #FFF;
+    background: #ECF0F1;
     width: 20px;
     height: 40px;
     left: 50%;
