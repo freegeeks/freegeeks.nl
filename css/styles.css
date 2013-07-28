@@ -70,43 +70,49 @@ body > header {
     text-align: center;
     display: block;
     position: relative;
-    animation-duration: 3s;
-    animation-name: animheader;
+    animation-duration: 2s;
+    animation-name: anim-header;
 }
-
-@keyframes animheader {
-  0% {
-      top: -1000px;
-  }
-
-  100% {
-      top: 0px;
-  }
-}
-
 body > header h1 {
     background: url('../img/freegeeks-logo.svg') no-repeat top center;
-    padding-top: 100px;
-    padding-bottom: 50px;
-    margin-bottom: 50px;
+    background-size: 100%;
+    padding: 130px 0 20px 0;
+    margin: 20px auto 0 auto;
     position: relative;
-    animation-duration: 4s;
-    animation-name: animh;
+    animation-duration: 2s;
+    animation-name: anim-logo;
+    width: 135px;
+    font-size: 1.4rem;
 }
 
-@keyframes animh {
+
+@keyframes anim-logo {
   0% {
       top: -200px;
   }
 
-  90% {
-      top: -200px;
+ 30% {
+      top: -180px;
+      opacity: 0;
+  }
+
+  100% {
+      top: 0px;
+      opacity: 1;
+  }
+}
+@keyframes anim-header {
+  0% {
+      top: -500px;
   }
 
   100% {
       top: 0px;
   }
 }
+
+
+
 
 body > header h2 {
     padding-bottom: 30px;
@@ -184,9 +190,6 @@ body > header:before {
 }
 
 
-#participate div {
-	margin: 20px 0;
-}
 #participate textarea {
     width: 94%;
     padding: 2%;
