@@ -129,6 +129,7 @@ body > header:after {
     bottom: -30px;
     margin-left: 7px;
     transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
 
 body > header:before {
@@ -141,6 +142,7 @@ body > header:before {
     bottom: -30px;
     margin-left: -7px;
     transform: rotate(315deg);
+    -webkit-transform: rotate(315deg);
 }
 
 /* TEAM */
