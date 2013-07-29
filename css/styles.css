@@ -156,6 +156,9 @@ body > header:before {
 #team header h1{
 	font-size: 2rem;
 	padding:0 0 20px 70px;
+	text-align: left;
+	
+}
 #rlc h1:before {
     background: url('../img/renato.jpg') no-repeat;
 }
